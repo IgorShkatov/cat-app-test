@@ -1,1 +1,63 @@
-/* font-family: 'Montserrat', sans-serif; */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  background-image: url(../img/Hedaer-bgr.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.header_content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  z-index: 3;
+}
+
+.header_content > span {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.header_nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.header_nav > li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header_nav > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
