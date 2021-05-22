@@ -41,28 +41,111 @@
         <div class="wrapper">
           <div class="sort_menu">
           <p>Сортировать по:</p>
-          <button>Цене<i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+          <button type="submit" id="sort-price-btn">Цене<i class="fa fa-arrow-down" aria-hidden="true"></i></button>
           <button>Возраст<i class="fa fa-arrow-down" aria-hidden="true"></i></button>
         </div>
             <div class="main_content-cards">
-              <div class="card">
+              <div class="card" data-price="30000">
                 <img src="./img/cot-card.png" alt="Кот">
                 <div class="card-name"><h2>Кот полосатый</h2></div>
                 <div class="card-features">
-                  <div class="slash">/</div>
-                  <div class="color">полосатый</div>
-                  <div class="age">2 мес.</div>
-                  <div class="legs">4</div>
+                  <div class="features-slash"></div>
+                  <div class="features-color"><p>Коричневый<br> окрас</p></div>
+                  <div class="features-age"><p><p class="text-bold">2 мес.</p><p class="item-text">Возраст</p></div>
+                  <div class="features-legs"><p class="text-bold">4</p><p class="item-text-2">Кол-во лап</p></div>
                 </div>
-                <div class="price"><p>30000</p></div>
-                <button>Купить</button>
+                <div class="card-price"><p>30 000 руб.</p></div>
+                <button class="card-btn-buy">Купить</button>
               </div>
+              <div class="card" data-price="40000">
+                <img src="./img/cot-card 2.png" alt="Кот">
+                <div class="card-name"><h2>Кот полосатый</h2></div>
+                <div class="card-features">
+                  <div class="features-slash"></div>
+                  <div class="features-color"><p>Коричневый<br> окрас</p></div>
+                  <div class="features-age"><p><p class="text-bold">2 мес.</p><p class="item-text">Возраст</p></div>
+                  <div class="features-legs"><p class="text-bold">4</p><p class="item-text-2">Кол-во лап</p></div>
+                </div>
+                <div class="card-price"><p>40 000 руб.</p></div>
+                <button class="card-btn-sell">Продан</button>
+              </div>
+              <div class="card" data-price="20000">
+                <img src="./img/cot-card 3.png" alt="Кот">
+                <div class="card-name"><h2>Кот полосатый</h2></div>
+                <div class="card-features">
+                  <div class="features-slash"></div>
+                  <div class="features-color"><p>Коричневый<br> окрас</p></div>
+                  <div class="features-age"><p><p class="text-bold">2 мес.</p><p class="item-text">Возраст</p></div>
+                  <div class="features-legs"><p class="text-bold">4</p><p class="item-text-2">Кол-во лап</p></div>
+                </div>
+                <div class="card-price"><p>20 000 руб.</p></div>
+                <button class="card-btn-buy">Купить</button>
+              </div>
+              <div class="card" data-price="25000">
+                <img src="./img/cot-card.png" alt="Кот">
+                <div class="card-name"><h2>Кот полосатый</h2></div>
+                <div class="card-features">
+                  <div class="features-slash"></div>
+                  <div class="features-color"><p>Коричневый<br> окрас</p></div>
+                  <div class="features-age"><p><p class="text-bold">2 мес.</p><p class="item-text">Возраст</p></div>
+                  <div class="features-legs"><p class="text-bold">4</p><p class="item-text-2">Кол-во лап</p></div>
+                </div>
+                <div class="card-price"><p>25 000 руб.</p></div>
+                <button class="card-btn-buy">Купить</button>
+              </div>
+              <div class="card" data-price="30000">
+                <img src="./img/cot-card 3.png" alt="Кот">
+                <div class="card-name"><h2>Кот полосатый</h2></div>
+                <div class="card-features">
+                  <div class="features-slash"></div>
+                  <div class="features-color"><p>Коричневый<br> окрас</p></div>
+                  <div class="features-age"><p><p class="text-bold">2 мес.</p><p class="item-text">Возраст</p></div>
+                  <div class="features-legs"><p class="text-bold">4</p><p class="item-text-2">Кол-во лап</p></div>
+                </div>
+                <div class="card-price"><p>30 000 руб.</p></div>
+                <button class="card-btn-buy">Купить</button>
+              </div>
+              <div class="card" data-price="10000">
+                <img src="./img/cot-card 2.png" alt="Кот">
+                <div class="card-name"><h2>Кот полосатый</h2></div>
+                <div class="card-features">
+                  <div class="features-slash"></div>
+                  <div class="features-color"><p>Коричневый<br> окрас</p></div>
+                  <div class="features-age"><p><p class="text-bold">2 мес.</p><p class="item-text">Возраст</p></div>
+                  <div class="features-legs"><p class="text-bold">4</p><p class="item-text-2">Кол-во лап</p></div>
+                </div>
+                <div class="card-price"><p>10 000 руб.</p></div>
+                <button class="card-btn-sell">Продан</button>
+              </div>
+            </div>
+            <div class="main-content-btn">
+              <button>Показать еще 20</button>
             </div>
             </div>
           </div>
         </div>
         </div>
     </section>
+
+ <footer class="footer">
+  <div class="wrapper">
+    <div class="footer-wrapper">
+      <div class="footer-title">
+        <h2>Успей купить!</h2>
+        <p>Подпишись и успей<br/> словить все акции</p>
+      </div>
+      <div class="footer-form">
+        <form action="">
+          <input class = "form-input" type="text" name="email" value="Email">
+          <button class="form-btn" type="submit" >подписаться</button>
+          <div class="check-box"><input class="form-check" type="checkbox" title=""> <p class="check-text">подписаться нв новости!</p></div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+ </footer>
     <script src="https://use.fontawesome.com/7ebdfdb1ed.js"></script>
     <script src="./js/main.js"></script>
   </body>
